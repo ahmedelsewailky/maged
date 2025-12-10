@@ -4,6 +4,17 @@ body {
     direction: rtl;
 }
 
+/* ---------------------------------------------------------------------------- */
+/* ========> NAVBAR */
+/* ---------------------------------------------------------------------------- */
+.navbar .navbar-brand img {
+    width: 64px;
+    height: 64px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ========> ABOUT SECTTION */
+/* ---------------------------------------------------------------------------- */
 .section {
     padding: 120px 0;
 }
@@ -13,14 +24,101 @@ body {
 }
 
 .float-section-image {
-    position: absolute;
     left: 0;
+    top: 50%;
+    position: absolute;
     border-radius: 24px;
+    transform: translateY(-10%);
 }
 
 .float-section-image:nth-child(2) {
     left: 40%;
-    border: 16px solid white;
-    bottom: -480px;
-    border-radius: 0;
+    border: 20px solid white;
+    bottom: -490px;
+    border-radius: 24px 0 0 0;
+    top: auto;
+}
+
+.about-section .section-image>div {
+    position: absolute;
+    left: 62%;
+    top: 20px;
+}
+
+.about-section .section-image>div span {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.about-section .section-image>div span:nth-child(2) {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ========> COLLAGE ADMISSION SYSTEM */
+/* ---------------------------------------------------------------------------- */
+.college-admission-system {
+    background-image: url("../images/parallax2-1.jpg");
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ========> FOOTER */
+/* ---------------------------------------------------------------------------- */
+.footer {
+    background-image: url("../images/background-image-1.jpg");
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 54px;
+    padding: 124px 0 0;
+}
+
+.footer-logo {
+    width: 184px;
+    background-color: white;
+    padding: 6px;
+    margin-bottom: 16px;
+}
+
+.footer h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.footer .socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer .socials .social-item {
+    display: grid;
+    place-content: center;
+    background-color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.footer-left {
+    padding-top: 68px;
+}
+
+.footer-left h6 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer .copyright {
+    border-top: 1px solid white;
+    margin-top: 34px;
+    padding-top: 12px;
+}
+
+.footer .copyright p {
+    font-size: 14px;
 }
