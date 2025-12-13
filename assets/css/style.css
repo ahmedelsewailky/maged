@@ -24,7 +24,7 @@ body {
 
 .navbar .nav-link::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 0;
     height: 2px;
     background-color: var(--main-color);
@@ -102,22 +102,6 @@ body {
     text-align: left;
 }
 
-.float-section-image {
-    left: 0;
-    top: 50%;
-    /* position: absolute; */
-    /* border-radius: 24px; */
-    /* transform: translateY(-10%); */
-}
-
-.float-section-image:nth-child(2) {
-    /* left: 40%; */
-    /* border: 20px solid white; */
-    /* bottom: -490px; */
-    /* border-radius: 24px 0 0 0; */
-    /* top: auto; */
-}
-
 .about-section .section-image>div {
     position: absolute;
     left: 62%;
@@ -143,7 +127,7 @@ body {
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
-    /* margin-top: 104px; */
+    background-attachment: fixed;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -184,6 +168,7 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    color: #000000;
 }
 
 .footer-left {
@@ -214,12 +199,22 @@ body {
 }
 
 h2.section-title {
-    font-size: 26px;
-    font-weight: 600;
-    position: relative;
-    border-right: 5px solid var(--bs-primary);
-    padding-right: 20px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    border-right: 5px solid var(--main-color);
+    margin: 16px 0 24px;
+    padding-right: 16px;
+}
+
+.section-text p {
+    line-height: 36px;
+    text-align: justify;
+    padding-right: 24px;
+}
+
+.section-text p span {
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 .college-admission-system .section-text-content p {
@@ -277,4 +272,69 @@ h2.section-title {
     font-size: 14px;
     line-height: 24px;
     text-align: justify;
+}
+
+.hero-section .carousel-item img {
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-section .carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-section .carousel-caption h5 {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.hero-section .carousel-caption p {
+    width: 65%;
+    margin: 40px auto;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.button {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 36px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.button-primary {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.section-text>.button {
+    margin-right: 23px;
+    margin-top: 24px;
+}
+
+.button-primary:hover {
+    background-color: black;
+}
+
+.section-image img {
+    border-radius: 24px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.footer .socials .social-item svg {
+    width: 18px;
+}
+
+.footer .socials .social-item:hover {
+    background-color: var(--main-color);
+    color: white;
 }
